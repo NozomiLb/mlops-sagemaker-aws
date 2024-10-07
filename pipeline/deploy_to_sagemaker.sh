@@ -4,7 +4,7 @@
 model_name="cnn-model"
 endpoint_config_name="cnn-model-endpoint-config"
 endpoint_name="cnn-model-endpoint"
-region="us-west-2"
+region="us-east-1"
 
 # Create Model
 aws sagemaker create-model \

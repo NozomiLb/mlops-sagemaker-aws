@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Define repository and image name
-repo_name="your-ecr-repo"
+repo_name="sgmkr-ecr-repo"
 image_name="cnn-model-inference"
-region="us-west-2"
+region="us-east-1"
 account_id=$(aws sts get-caller-identity --query Account --output text)
 
 # Build Docker image

@@ -1,0 +1,19 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - docker build -t cnn-model .
+
+test:
+  stage: test
+  script:
+    - pytest --maxfail=1 --disable-warnings
+
+deploy:
+  stage: deploy
+  script:
+    - bash pipeline/deploy_to_sagemaker.sh

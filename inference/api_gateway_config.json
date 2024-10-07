@@ -1,0 +1,67 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Image Classification API",
+      "description": "An API to classify food images and provide calorie information.",
+      "version": "1.0"
+    },
+    "basePath": "/",
+    "schemes": [
+      "https"
+    ],
+    "paths": {
+      "/predict": {
+        "post": {
+          "summary": "Classify an image",
+          "description": "Accepts a base64 encoded image and returns the predicted food class and calorie information.",
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "description": "Base64 encoded image",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Prediction made successfully",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "predicted_class": {
+                    "type": "integer"
+                  },
+                  "calories": {
+                    "type": "integer"
+                  },
+                  "food_name": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid input"
+            },
+            "404": {
+              "description": "Food class not found"
+            }
+          },
+          "x-amazon-apigateway-integration": {
+            "uri": "arn:aws:apigateway:{region}:lambda:path/2015-03-31/functions/arn:aws:lambda:{region}:{account_id}:function:your_lambda_function/invocations",
+            "httpMethod": "POST",
+            "type": "aws_proxy"
+          }
+        }
+      }
+    }
+  }
+  

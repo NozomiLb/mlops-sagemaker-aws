@@ -1,0 +1,8 @@
+aws_region            = "us-east-1"
+s3_bucket_name        = "sagemkr-detect-food"
+notebook_instance_name = "mlops-notebook"
+notebook_instance_type = "ml.t2.medium"
+pipeline_name          = "mlops-pipeline"
+pipeline_display_name = "MLOps SageMaker Pipeline"
+sagemaker_endpoint_name = "mlops-endpoint"
+dynamodb_table_name    = "mlops-calorie-table"

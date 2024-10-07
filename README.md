@@ -30,7 +30,7 @@ Key technologies and tools:
 
 The diagram below shows the architecture of the project:
 
-![Project Architecture](path-to-your-architecture-image.png)
+![Project Architecture](aws-sagemkr-mlops.png)
 
 1. **S3**: Stores training and test data.
 2. **SageMaker**: Trains the model and deploys the inference endpoint.

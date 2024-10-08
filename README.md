@@ -8,7 +8,7 @@ This repository contains an end-to-end MLOps pipeline for training, deploying, a
 - [Setup](#setup)
 - [Train and Deploy the Model](#train-and-deploy-the-model)
 - [CI/CD Pipeline](#cicd-pipeline)
-- [Monitoring the Deployed Model](#monitoring)
+- [Monitoring the Deployed Model](#monitoring-the-deployed-model)
 - [License](#license)
 
 ## Overview

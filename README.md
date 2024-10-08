@@ -1,4 +1,4 @@
-# Deep Learning Project for Meal Detection and Calorie Estimation with an Automated MLOps Pipeline using AWS SageMaker
+# Automated MLOps Pipeline for Meal Detection and Calorie Estimation Using AWS SageMaker and Terraform for Infrastructure Provisioning and Management
 
 This repository contains an end-to-end MLOps pipeline for training, deploying, and maintaining a food image classification model with calorie estimation in AWS SageMaker. The project uses AWS SageMaker, Lambda, API Gateway, DynamoDB, and other AWS services, integrated with CI/CD pipelines for automation.
 

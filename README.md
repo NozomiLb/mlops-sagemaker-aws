@@ -36,7 +36,6 @@ The diagram below shows the architecture of the project:
 5. **CI/CD**: Automated retraining, testing, and deployment with GitLab CI/CD.
 6. **Terraform**: Automates the creation of AWS resources.
 7. **CloudWatch**: For monitoring the model and system metrics.
-7. **CloudWatch**: For monitoring the model and system metrics.
 
 ## Setup
 

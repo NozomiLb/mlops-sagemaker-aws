@@ -24,5 +24,7 @@ resource "aws_api_gateway_integration" "lambda_integration" {
   type                   = "AWS_PROXY"
   uri                    = aws_lambda_function.inference_lambda.invoke_arn
   uri                    = aws_lambda_function.inference_lambda.invoke_arn
+  uri                    = aws_lambda_function.inference_lambda.invoke_arn
+
 
 }

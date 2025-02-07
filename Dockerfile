@@ -14,8 +14,7 @@ RUN pip install --upgrade pip && \
     Pillow
 
 # Copy the training and inference scripts into the container
-COPY train.py /opt/ml/code/train.py
-COPY inference.py /opt/ml/code/inference.py
+C
 
 # Set environment variables for SageMaker to recognize the script locations
 ENV SAGEMAKER_PROGRAM train.py

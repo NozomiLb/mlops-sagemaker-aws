@@ -8,7 +8,10 @@ build:
   script:
     - docker build -t cnn-model .
 
-
+test:
+  stage: test
+  script:
+    - pytest --maxfail=1 --disable-warnings
 
 deploy:
   stage: deploy

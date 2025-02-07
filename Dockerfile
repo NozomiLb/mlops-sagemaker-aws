@@ -18,7 +18,8 @@ COPY train.py /opt/ml/code/train.py
 COPY inference.py /opt/ml/code/inference.py
 
 # Set environment variables for SageMaker to recognize the script locations
-
+ENV SAGEMAKER_PROGRAM train.py
+ENV SAGEMAKER_SUBMIT_DIRECTORY /opt/ml/code/
 
 # Set the entry point for training
 ENTRYPOINT ["python", "/opt/ml/code/train.py"]
